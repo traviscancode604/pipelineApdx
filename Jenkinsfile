@@ -35,7 +35,7 @@ pipeline {
 			      steps {
                 echo 'Pushing image to Docker Hub'
                 sh 'docker images'
-                sh 'docker tag jupyter-travis traviscancode604/jupyter-apdx'
+                sh 'docker tag jupyter-apdx traviscancode604/jupyter-apdx'
 				        sh 'docker images'
                 sh 'docker push traviscancode604/jupyter-apdx:latest'
                 echo 'Push Stage Complete'
